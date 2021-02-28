@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    .center {
+        margin: auto;
+        width: 50%;
+        top: 50%;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="center">
+    <form class="center" th:action="@{/converter}" method="get">
+        <button class="btn btn-primary" type="Submit">Converter</button>
+    </form>
+    <form class="center" th:action="@{/list}" method="get">
+        <button class="btn btn-primary" type="Submit">Converted Songs</button>
+    </form>
+    <form class="center" th:action="@{/premium}" method="get">
+        <button class="btn btn-primary" type="Submit">Premium</button>
+    </form>
+    <form class="center" th:action="@{/signout}" method="get">
+        <button class="btn btn-primary" type="Submit">Sign Out</button>
+    </form>
+    </div>
+</body>
+</html>
